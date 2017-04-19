@@ -1,0 +1,27 @@
+@import 'settings';
+
+body, table {
+  font-family: $body-font-family;
+  font-size: $global-font-size;
+  line-height: $body-line-height;
+}
+
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+td {
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+table, tr, td {
+  padding: 0;
+  vertical-align: top;
+  text-align: left;
+}
+
+table, td {
+  border-collapse: collapse;
+}
