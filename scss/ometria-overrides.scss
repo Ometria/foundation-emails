@@ -14,6 +14,7 @@ td {
   -moz-hyphens: auto;
   -webkit-hyphens: auto;
   hyphens: auto;
+  word-wrap: break-word;
 }
 
 table, tr, td {
@@ -24,4 +25,31 @@ table, tr, td {
 
 table, td {
   border-collapse: collapse;
+}
+
+table {
+  border-spacing: 0;
+}
+
+table.spacer td {
+  mso-line-height-rule: exactly;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+td,
+th,
+a {
+  color: $global-font-color;
+  font-family: $body-font-family;
+  font-weight: $global-font-weight;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  line-height: $global-line-height;
 }
