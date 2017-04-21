@@ -18,8 +18,8 @@ $body-font-family: Helvetica, Arial, sans-serif !default;
 /// @type Keyword
 $global-font-weight: normal !default;
 
-/// Global font weight.
-/// @type Keyword
+/// Header color
+/// @type Color
 $header-color: inherit !default;
 
 /// Global line height.
@@ -151,25 +151,34 @@ $anchor-color-active: $anchor-color-hover !default;
 $stat-font-size: 40px !default;
 
 body,
-table.body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-td,
-th,
-a {
+table.body
+//,
+//h1,
+//h2,
+//h3,
+//h4,
+//h5,
+//h6,
+//p,
+//td,
+//th,
+//a
+{
   color: $global-font-color;
   font-family: $body-font-family;
   font-weight: $global-font-weight;
   padding: 0;
   margin: 0;
-  Margin: 0;
   text-align: left;
   line-height: $global-line-height;
+}
+
+p {
+  margin: 0 0 $paragraph-margin-bottom;
+}
+
+th {
+  font-weight: $global-font-weight;
 }
 
 h1,
@@ -183,7 +192,6 @@ h6 {
   font-family: $header-font-family;
   font-weight: $header-font-weight;
   margin-bottom: $header-margin-bottom;
-  Margin-bottom: $header-margin-bottom;
 }
 
 h1 {
@@ -212,16 +220,16 @@ h6 {
 
 body,
 table.body,
-p,
-td,
-th {
+//p,
+//td,
+//th
+{
   font-size: $global-font-size;
   line-height: $body-line-height;
 }
 
 p {
-  margin-bottom: $paragraph-margin-bottom;
-  Margin-bottom: $paragraph-margin-bottom;
+//  margin-bottom: $paragraph-margin-bottom;
 
   &.lead {
     font-size: $lead-font-size;
@@ -231,8 +239,6 @@ p {
   &.subheader {
     margin-top: $subheader-margin-top;
     margin-bottom: $subheader-margin-bottom;
-    Margin-top: $subheader-margin-top;
-    Margin-bottom: $subheader-margin-bottom;
     font-weight: $subheader-font-weight;
     line-height: $subheader-lineheight;
     color: $subheader-color;
@@ -279,7 +285,6 @@ h6 a:visited {
 pre {
   background: $light-gray;
   margin: 30px 0;
-  Margin: 30px 0;
 
   code {
     color: $medium-gray;
@@ -299,7 +304,7 @@ pre {
 // Horizontal rule
 table.hr {
   width: 100%;
-  
+
   th {
     height: 0;
     max-width: $hr-width;
@@ -308,7 +313,6 @@ table.hr {
     border-bottom: $hr-border;
     border-left: 0;
     margin: $hr-margin;
-    Margin: $hr-margin;
     clear: both;
   }
 }
@@ -320,7 +324,6 @@ table.hr {
 
   p + & {
     margin-top: -16px;
-    Margin-top: -16px;
   }
 }
 
@@ -337,3 +340,4 @@ span.preheader {
   opacity: 0;
   overflow: hidden;
 }
+

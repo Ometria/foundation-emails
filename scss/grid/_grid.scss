@@ -37,7 +37,7 @@ table {
     background: $container-background;
     width: $global-width;
     margin: 0 auto;
-    Margin: 0 auto;
+    //Margin: 0 auto;
     text-align: inherit;
   }
 
@@ -50,7 +50,7 @@ table {
   &.spacer {
     width: 100%;
     td {
-      mso-line-height-rule: exactly;
+      //mso-line-height-rule: exactly;
     }
   }
 }
@@ -64,7 +64,7 @@ td.column,
 th.columns,
 th.column {
   margin: 0 auto;
-  Margin: 0 auto;
+  //Margin: 0 auto;
   padding-left: $global-gutter;
   padding-bottom: $column-padding-bottom;
 

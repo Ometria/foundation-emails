@@ -16,7 +16,6 @@ body {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   margin: 0;
-  Margin: 0;
   padding: 0;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -38,7 +37,6 @@ body {
 
 #backgroundTable {
   margin: 0;
-  Margin: 0;
   padding: 0;
   width: 100% !important;
   line-height: 100% !important;
@@ -47,7 +45,6 @@ body {
 img {
   outline: none;
   text-decoration: none;
-  -ms-interpolation-mode: bicubic;
   width: auto;
   max-width: 100%;
   clear: both;
@@ -63,21 +60,19 @@ a img {
   border: none;
 }
 
+
 table {
-  border-spacing: 0;
-  border-collapse: collapse;
+  //border-spacing: 0;
+  //border-collapse: collapse;
 }
 
 td {
-  word-wrap: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
-  border-collapse: collapse !important;
+  //word-wrap: break-word;
+  //border-collapse: collapse !important;
 }
 
-table, tr, td {
-  padding: 0;
-  vertical-align: top;
-  text-align: left;
-}
+//table, tr, td {
+//  padding: 0;
+//  vertical-align: top;
+//  text-align: left;
+//}
